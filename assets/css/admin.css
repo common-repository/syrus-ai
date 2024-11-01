@@ -1,0 +1,313 @@
+#wpcontent {
+    padding-left: 0 !important;
+    position: relative !important;
+}
+
+#wpwrap {
+    background-color: #e6e6e6;
+}
+
+#wpbody-content::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #feb200;
+    top: 0;
+    left: 0;
+}
+
+.section-header-admin {
+    margin: 15px 0;
+}
+
+.section-topnav-menu {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.section-topnav-menu nav {
+    display: flex;
+}
+
+.section-topnav-menu nav li {
+    cursor: pointer;
+    position: relative;
+    flex: 1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-topnav-menu nav li a {
+    text-decoration: none;
+    color: #50575e;
+    text-align: center;
+    font-size: 13px;
+}
+
+.section-topnav-menu nav li .submenu {
+    position: absolute;
+    min-height: 50px;
+    background-color: #fff;
+    left: 0;
+    top: 50px;
+    min-width: 130%;
+    z-index: 3;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+
+.section-topnav-menu nav li .submenu a {
+    width: 100%;
+    position: relative;
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.section-topnav-menu nav li .submenu a:first-child {
+    margin-top: 5px;
+}
+
+.section-topnav-menu nav li .submenu a:hover {
+    color: #1768b2;
+}
+
+.section-topnav-menu nav li .submenu a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background-color: #50575e25;
+}
+
+.section-topnav-menu nav li .submenu a:last-child::after {
+    content: none;
+}
+
+.section-topnav-menu nav li:not(.with-submenu) a {
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
+}
+
+
+.section-topnav-menu nav li.with-submenu::before {
+    content: "\f140";
+    font-family: Dashicons;
+    font-size: 20px;
+    position: absolute;
+    right: 1%;
+}
+
+.section-topnav-menu nav li.with-submenu.open::before {
+    content: "\f142";
+}
+
+.section-topnav-menu nav li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #1768b2;
+    width: 0;
+    height: 2px;
+    transition: all .5s;
+}
+
+.section-topnav-menu nav li:not(.with-submenu):hover,
+.section-topnav-menu nav li:focus,
+.section-topnav-menu nav li.active {
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.section-topnav-menu nav li:not(.with-submenu):hover a,
+.section-topnav-menu nav li.active > a,
+.section-topnav-menu nav li.with-submenu .submenu a.active {
+    color: #1768b2;
+    font-weight: 500;
+}
+
+.section-topnav-menu nav li:not(.with-submenu):hover::after,
+.section-topnav-menu nav li:focus::after,
+.section-topnav-menu nav li.active::after {
+    width: 100%;
+}
+
+.section-topnav-menu nav li span.syrus-ai-coming-soon {
+    position: absolute;
+    top: -20px;
+    left: 12.5%;
+    width: 75%;
+    text-align: center;
+    background-color: #feb200;
+    padding: 5px 0;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+button.btn-support {
+    border: 1px solid #feb200 !important;
+    background-color: #feb200;
+    color: black;
+    padding: 5px 30px;
+}
+
+button.btn-support:hover {
+    background-color: transparent;
+    color: #feb200;
+}
+
+.col-tab p {
+    color: #525252;
+}
+
+.col-tab h4 {
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-size: 18px;
+}
+
+.col-tab table.table-advanced-settings th,
+.col-tab table.table-advanced-settings td {
+    padding: 10px;
+    min-width: 150px;
+    vertical-align: middle;
+}
+
+.col-tab table.table-advanced-settings td {
+    min-width: 70px;
+}
+
+.col-tab table.table-advanced-settings tr td:nth-child(2) {
+    width: 450px;
+}
+
+.col-tab table.table-advanced-settings td input {
+    margin: 0 !important;
+}
+
+.loading-btn {
+    background-color: transparent !important;
+    color: #1768b2 !important;
+    padding: 2px 30px !important;
+    cursor: not-allowed !important;
+}
+
+.swal2-icon.syrus-ai-icon.swal2-icon-show {
+    background-image: url(../images/icon-128x128.png);
+    border: none;
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.swal2-popup.swal2-toast.syrus-ai-popup.swal2-show::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1768b2;
+}
+
+.swal2-popup.swal2-toast.syrus-ai-popup.error.swal2-show {
+    border-left-color: transparent !important;
+}
+
+.swal2-popup.swal2-toast.syrus-ai-popup.error.swal2-show::before {
+    background-color: red;
+}
+
+.swal2-popup.syrus-ai-popup.swal2-toast .swal2-title,
+.swal2-popup.syrus-ai-popup.swal2-toast .swal2-html-container {
+    margin: 0 !important;
+}
+
+.table-support {
+    background-color: white;
+}
+
+.table-support th {
+    min-width: 400px;
+}
+
+.table-support th,
+.table-support td {
+    padding: 10px;
+}
+
+.table-support th .attention {
+    display: block;
+    font-size: 9px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#input-domain {
+    width: 300px;
+}
+
+.domain-list .domain {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+}
+
+.nav-item.domain-tab > a {
+    color: black;
+    font-weight: 300;
+    border-bottom: 1px solid #feb200;
+}
+
+.nav-item.domain-tab > a.active {
+    color: #1768b2;
+    font-weight: 500;
+    border: 1px solid #feb200;
+    border-bottom: none;
+    position: relative;
+    top: 1px;
+}
+
+
+.nav-tabs-domains {
+    border: none !important;
+}
+
+.tabs-content-domains {
+    width: 100%;
+    min-height: 500px;
+    background-color: white;
+}
+
+.tabs-content-domains.active {
+    border: 1px solid #feb200
+}
+
+
+.add-domain-tab > a {
+    color: #838383 !important;
+}
+
+.add-domain-tab a:hover {
+    color: #1768b2 !important;
+    font-weight: 600;
+}
